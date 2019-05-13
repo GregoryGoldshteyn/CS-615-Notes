@@ -1,0 +1,59 @@
+TCP vs UDP
+
+    TCP requires a connection to be established via the TCP handshake
+        ack > syn-ack > syn
+
+        Then, all communications require an ack from the other party
+
+    UDP does not establish a connection at all.
+        Just send message.
+
+        In practice, acks can be implemented at the application layer
+            Ex. DNS lookup
+
+    TCP good for when you need data to be correct
+        Banking
+        Ecommerce
+
+    UDP good for when you need fast + no overhead
+        Video streaming
+        Music streaming
+        DNS lookup
+
+Jumbo packets
+
+    Though the header allows UDP packets to be up to 64K, in practice they are
+        1512 bytes.
+
+        This is an ethernet standard, to prevent UDP packets from taking up
+            network bandwidth from other devices.
+
+    Better equipment means this doesn't have to be such an issue, so you can
+        manually set UDP packet size to be larger than normal.
+
+        Jumbo packets mean less header, so more of the data is data
+            ~1.8% header for 1512 bytes, 0.3% header for 9000 bytes
+
+        But you have to have control of all network devices to agree to use
+            this larger packet size
+
+            Otherwise, messages can be discarded or fragmented, reducing speed
+
+---Post Lecture---
+
+Unix philosophy is important
+    Text stream is good
+
+Get everything in writing
+    Email threads
+        CC the boss
+    Contracts
+
+DNS is complex, weird, and sucks
+    If you ahve problems, it's probably DNS
+    Because of this, it is very important to understand
+
+Single package manager is better than many package managers
+    Good for proper dependency management
+    Prevents redundancy
+    

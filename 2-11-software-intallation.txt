@@ -1,0 +1,32 @@
+Firmware
+    Very low level instructions that run on hardware
+    The first instructions run when CPU starts
+
+Operating system
+    Interface between user + software and the hardware
+
+Software
+    High level commands to perform tasks
+
+Installing an OS involves creating and partitioning the filesystem
+    Installing drivers to use hardware
+
+---Post Lecture---
+
+    Package managers
+        Ensure dependencies are met for software
+        Can handle updating software
+        Can install new packages, and dependencies
+
+        May be specific to one particular thing
+            Ex. the node pacakge manager, pip
+
+    Installing software requires trust
+        Need to install using elevated permissions
+        Attacks that target package managers have been developed
+            Ensure package managers are up to date
+
+    VMs, containers handle dependencies differently
+        Just pack the OS or libraries along with software!
+
+    Understand that when writing software, it will need to be installed

@@ -1,0 +1,24 @@
+I'm a philosophy minor
+    I've done a LOT of ethics, including "applied ethics"
+        Bioethics
+        Technoethics
+
+Personally, I lean towards the cyber-libritarianism side of ethics
+    Let people know what they're getting into
+    Let people know when there are problems, and how to fix them
+
+    As long as you spell it out for them, users are responsible for thier
+        decisions to use software
+
+Software development ethics are not as well developed as other fields
+    Medicine, law
+
+---Post Lecture---
+
+    Software ethics are really underdeveloped
+
+    It seems that the UNIX philosophy is pretty good
+
+    Understand that ethical and legal don't always align
+
+    It's up to us to make software development an ethical place

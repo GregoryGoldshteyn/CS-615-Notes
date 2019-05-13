@@ -1,0 +1,40 @@
+Unix was developed when computers were expensive, unweildy
+    So it was designed with multiple users on a system in mind
+
+Good for managing who is allowed to see what on a shared fs
+
+---Post Lecture---
+
+Permissions change
+    Who can see the contents of a file
+    Who can change the contents of a file
+    Who can run a file
+
+Unix permissions are handled 3 ways
+    Owner permissions
+    Group permissions
+    Everyone permissions
+
+Groups
+    To scale setting permissions for many people, give permissions to group
+        then add or remove users to group as needed
+
+        Ex. Developers can read this file, but not write to it
+            Admins can read or write it
+            Everyone else cannot see or change it
+
+    Easier, safer than giving people permissions ad hoc
+
+    Works well for giving daemons permissions too
+        Docker daemon
+
+Unix permissions are set by 3 octal numbers that set
+    How the owner may interact with the file
+    How the owner's group may interact with the file
+    How everyone else may interact with the file
+
+Be careful when using sudo
+    File permissions are set for a reason
+    When being the root user, you may make mistakes
+
+chmod 777 is rarely the correct course of action

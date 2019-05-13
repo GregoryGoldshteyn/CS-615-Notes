@@ -1,0 +1,56 @@
+HTTPS
+
+    HTTP is plaintext
+    HTTPS is encrypted
+        SSL
+        This happens at the application layer
+            (HTTP encapsulated in an encrypted package)
+    Problems
+        Man in the middle is an issue
+        Relies on certificate issuers
+        More traffic than HTTP
+
+    Questions
+        Different in IPv6?
+        Other encryption methods?
+            Since it's application layer, why not?
+        SSH?
+
+SMTP
+
+    Mail is tcp on port 25
+    Lots of headers
+        Some we see (sender, recipient, date, content)
+        Others we don't (content type)
+    Can encrypt messages
+        Check email provider for details
+    Can sign messages
+        Certificate authority similar to SSL
+
+    Questions
+        Why have seperate mail protocol?
+
+---Post lecture---
+    Why different mail protocols?
+        Has a different set of built in tools and configuration to make mail
+        easier. Sets a standard for mail communication that is usable and can
+        talk to everyone using the standard.
+
+    CAP (Security)
+        Confidentiality - Only you can see it
+        Integrity - Message is immutable
+        Authenticity - I am who I am
+
+    Use TLS, not SSL
+        SSL out of date
+
+    Start using a password manager
+
+    Certificates for authentication used to be issued for longer, now less
+        More secure this way
+
+    Trust anchor
+        The first step of boostrapping security
+            For TLS, root certificate authorities
+
+    SPAM is from the Monty Python Sketch

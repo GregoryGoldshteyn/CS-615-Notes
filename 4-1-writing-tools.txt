@@ -1,0 +1,29 @@
+Shell stuff
+
+    Different shells have different features
+        Increased features tend to decrease compatibility
+    What exactly?
+
+Regex
+
+    I know of it
+    I've used it before
+    But would need a reference to use it effectively
+    Powerful tool though
+
+Tools in general
+
+    Kluges stick around forever
+    Write things for scalability
+    Comments for why, not what
+
+---Post Lecture---
+
+Learning Regex is probably a good idea
+    Not just for this class, but in general
+
+Knowing that different shells have different features will be relevant for
+    future assignments
+
+Make modular tools
+    Heavily hinted that parts of the program will be reused

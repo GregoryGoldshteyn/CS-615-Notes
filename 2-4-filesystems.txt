@@ -1,0 +1,70 @@
+NAS SAN
+    NAS - single device open to multiple users
+    SAN - multiple devices on LAN open to single user
+
+inode
+    Contains info about where the file is
+    Does not contain the actual data
+
+---Post Lecture---
+
+Don't keep random junk in
+    /
+    /usr
+    /bin
+
+    See slide 10
+
+Types of filesystems
+
+    High level concepts
+    
+        Regular
+        Journaling - keep log of changes
+        Networking - work over multiple devices
+
+    FUSE
+        Simulate filesystems in userspace to create virtual fs
+
+    Need different partitions for different mount options
+
+    async improves performance
+
+    readonly improves performance
+
+    Tar file
+        Store multiple files in single stream of bytes to sace space
+
+    inode
+        number is fixed at fs creation
+        stored in the superblock
+            has many backups over the fs
+        see slide 34
+
+    file types
+        normal files
+        directory
+            maps to inode
+        special files
+            things unver /dev
+            physical hardware?
+        link
+            two names for same file
+        symbolic link
+            points to file location
+        sockets
+            allows files/devices to connect over network
+        Named pipe
+            File version of pipe |
+            No size
+    
+    BIOS
+        Basic input output system
+
+    Post
+        Power on self test
+
+    Booting process is as follows
+        Power > POST > BIOS > Hypervisor > OS Kernel
+
+        

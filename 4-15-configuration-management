@@ -1,0 +1,36 @@
+I've used some package managers
+    Apt-get
+    Yum
+    NPM
+
+Rancher Rodeo touched on configuration management for Kubernetes
+    But I don't think I understand Kubernetes well enough
+
+---Post Lecture---
+
+Single, custom systems are fragile and bad practice
+
+    I get why they call it Rancher!
+        Use server ranches, rather than pet servers
+
+Solution - Configuration management
+
+    cfengine
+        specify files, template, parameters, commands
+
+CM system does not make specific changes
+    It asserts a state
+
+Concept, group resources into sets based on type, functionality, ect.
+
+Good practice, use different CM in different environments
+    Test
+    Int
+    Prod
+
+Idempotence
+    Don't care about success/failure
+    All we care about is state is unchanged from multiple runs
+    Not always as efficient as non idempotent
+
+CM systems are subject to CAP

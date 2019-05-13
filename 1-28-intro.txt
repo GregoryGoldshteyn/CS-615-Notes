@@ -1,0 +1,33 @@
+Observations
+
+The four teams seem to have a pairing, dualistic nature with one another
+Attackers try to break things, defenders want to protect things
+Completionists want everything perfect, usability advocates want everything 
+fast
+
+To me, this might work better as a system of elements, rather than colors, 
+using the classical Earth/Wind/Fire/Water
+
+Even though the natures are dualistic, each overlaps with another. A complete 
+system may be more secure, a well designed UI might prevent user error
+
+I find it weird that systems administration was considered "too physical" for 
+Stevens when mechanical engineering students played with steel ingots in class
+to better understand different grades of steel.
+
+Computer science can be highly theoretical, but the implementation of systems 
+in the real world requires experience with the physical
+
+Questions
+
+A command using pipes was demonstrated performing a complex task using a single
+line of code
+
+While this may be handy for an ad hoc process, how do we determine when a 
+clever solution is favorable over an easily readable solution?
+
+In addition to interacting with the system through the command line, will we 
+also be using scripting languages, such as Perl or Python to perform tasks?
+
+Between this first lecture, and the syllabus, it looks like DOS is out of s
+cope for this class. Is that a fiar assessment?

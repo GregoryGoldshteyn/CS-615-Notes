@@ -1,0 +1,61 @@
+Simple requests on the internet go through a lot of different protocols and
+    devices.
+
+We can use packet monitoring software to see what is going on "under the hood"
+
+---Post Lecture---
+
+HW1 Stuff
+
+    Include more detail about
+        Problems encountered
+        Why a course of action was taken
+    
+    Format the README better
+
+    Ask about stuff on mailing list
+        Start HW early
+
+    Don't provide useless comments
+
+    Write code so it works in any dir
+
+    Use ec2-wait to wait for instance
+
+    Terminate instance after running
+
+    Avoid waterfall code -- assume 80 character terminal
+        if
+            if
+                if
+                    if ...
+
+Levels of hardware devices
+    Lvl 1 - "Half duplex"
+        Repeater Hub - All packets go to all devices on the network
+
+    Lvl 2 - "Full duplex"
+        Network switch
+            Segmentation
+            Bridge
+            CIDR
+            STP
+
+    Lvl 3
+        Router
+            Connect multiple networks
+            Routing tables
+                Accessing other networks
+            BGP
+
+Lvl 2 for LAN, Lvl 3 for WAN
+
+DNS
+    List of hosts in /etc/hosts
+        Can change list of sites arbitrarily
+
+Even simple requests require a number of protocols, layers
+
+ICMP - protocol for errors at the IP layer
+
+UDP - used for DNS lookup

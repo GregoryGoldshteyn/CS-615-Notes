@@ -1,0 +1,67 @@
+I haven't used a backup recovery utility
+
+For most homework stuff, I use either Drive or Git for data storage
+
+---Post Lecture---
+
+Dumping
+    Use incremental backups to only get things that have changed
+
+    The first dump takes much longer
+
+    Problem: getting much older files requires returning to first dump, then
+        working forward on other files
+
+        Solution: do incremental dumps frequently, with occasional level 0 
+            dumps
+
+    Questions to ask for disaster recovery
+        How long will it take
+        How much data will be lost
+
+    "Sharable Content"
+        Stuff that can be moved and accessed from one device to another
+
+    "Unsharable Content"
+        Stuff that has configs or is tied inherently to a filesystem
+
+    Rsync
+        synchronizes two operating systems trees
+
+        clever, uses checksums for efficiency
+
+    Time Machine, MAC OS
+        Start with level 0 backup of fs
+            Then, check files for changes
+                Every hour for frequently used
+                Daily for less
+                Weekly for less
+                Monthly for less
+    
+    WAFL
+        Don't backup at FILE level, bakup at BLOCK level
+        Backup is baked into kernel
+        Restoration is immediate
+
+    ZFS does WAFL at file level?
+
+    Backup - take a copy
+
+    Snapshot - See what a FS looks like at a time
+
+    Logging
+        Keep track of events to detect or diagnose problems
+
+    Event
+        Something happened
+        Something didn't happen
+
+    Metric
+        Collection of related events
+
+    Know your systems
+        Understand what is normal to see when something isn't normal
+
+    Email is not a scalable production model for logging
+
+    Metrics become more valuable over time

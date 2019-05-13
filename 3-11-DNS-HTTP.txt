@@ -1,0 +1,50 @@
+DNS
+    Used to translate website names in ip addresses
+
+    Start by asking the top level domains
+        com
+        edu
+        gov
+        ...
+
+        And recurse down until we find the correct IP
+
+    Top level domain servers are huge, and distributed through the world
+        The bootstap upon which the entire internet is based
+
+    Routing tables, name -> ip, are huge plaintext files that DNS servers
+        use to route to ip addresses, other DNS servers, ect.
+
+---Post Lecture---
+
+    Time
+        Time sucks
+        Use UTC for everything (programmer's GMT)
+        falsehoodsabouttime.com
+
+    Fully qualified domain names include a dot at the end to indicate the root
+        server.
+
+        NOTE -- In DNS section above, there is error. We hit the root server
+            THEN the top level domain name servers
+
+    Authorative servers
+        Have and KNOW the mappings from name to ip
+        Root level and top level domain servers are this
+
+    Recursive servers
+        Ask other DNS servers for info
+        Cache the info for some amount of time
+            Day, week, month, year...
+
+    HTTP
+        Status codes
+            100 - success, but more action required
+            200 - success
+            300 - redirect
+                also for caching
+            400 - client error
+                you've made a bad request
+                ex. 404 - you request something that doesn't exist
+            500 - server error
+                the server cannot complete request

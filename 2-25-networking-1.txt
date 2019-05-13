@@ -1,0 +1,22 @@
+IPv4 IPv6
+    We are running out of IPv4 addresses
+    Switch to new standard with more address bits (IPv6)
+
+TCP UDP
+    TCP slower, but better for data correctness
+    UDP faster, but no promise of delivery
+
+Switch Router
+    Switch handles sending data between devices on LAN
+    Router is smarter, has some software to protect devices from WAN
+
+---Post Lecture---
+
+Internet communication protocols are organized by the OSI stack
+
+IP addresses and protocol standards are built by + for large organizations
+    that oversee the development of internet protocols.
+
+    IANA
+        Internet assigned number authority
+        
